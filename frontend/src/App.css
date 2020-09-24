@@ -1,0 +1,52 @@
+.Cart-total {
+  font-size: 1.4em;
+}
+
+.Cart-checkout {
+  margin-top: 1em;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em;
+  background: #888;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.StockEntry-title, .CartEntry-title {
+  font-size: 1.2em;
+}
+
+.StockEntry-count, .CartEntry-count {
+  margin-left: 1em;
+  font-style: italic;
+}
+
+.StockEntry-count::before, .CartEntry-count::before{
+   content: '(';
+}
+
+.StockEntry-count::after, .CartEntry-count::after {
+  content: ')';
+}
+
+.Order[data-state='stopped'] {
+  color: grey;
+}
+
+.Order-summary {
+  line-height: 2em;
+}
+
+.Order-total, .Order-lines-count, .OrderLines-price {
+  margin-left: 10px;
+}
+
+.Order-state {
+  margin: 0 5px;
+  padding: 5px;
+  background: #DDD;
+  border-radius: 5px;
+}
